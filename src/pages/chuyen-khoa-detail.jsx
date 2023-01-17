@@ -23,13 +23,13 @@ const ChuyenKhoaDetail = () => (
     </List>
     <List mediaList className="search-list searchbar-found search-list-style search-list-bor">
     <ListItem title="Bs. Lê Công Tuấn Anh" subtitle="Cơ xương khớp" text="Bệnh viện Hữu Nghị Việt Đức">
-        <img className='ava img-64' slot="media" src="demo/ava3.jpg" width="64" />
-        <img className='ava-logo' slot="media" src="svg/logo/ava-logo-viet-duc.svg" width="24" />
+        <img className='ava img-64' slot="media" src="assets/vivnpay/demo/ava3.jpg" width="64" />
+        <img className='ava-logo' slot="media" src="assets/vivnpay/svg/logo/ava-logo-viet-duc.svg" width="24" />
         <Link href="/bac-si-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link>
         <Row slot='root' className='item-bottom'>
           <Col>
-            <div className='font-size-12'>Phí dịch vụ</div>
-            <div className='medium color-primary'>560,000đ</div>
+            <div className='font-size-14'>Phí dịch vụ</div>
+            <div className='medium color-primary'>560,000<sub>đ</sub></div>
             </Col>
             <Col>
             <Button href="/dat-lich-kham/" fill color="default">Đặt lịch khám</Button>
@@ -37,13 +37,13 @@ const ChuyenKhoaDetail = () => (
           </Row>
       </ListItem>
       <ListItem title="Bs. Lê Công Tuấn Anh" subtitle="Cơ xương khớp" text="Bệnh viện Hữu Nghị Việt Đức">
-        <img className='ava img-64' slot="media" src="demo/ava4.jpg" width="64" />
-        <img className='ava-logo' slot="media" src="svg/logo/ava-logo-viet-duc.svg" width="24" />
+        <img className='ava img-64' slot="media" src="assets/vivnpay/demo/ava4.jpg" width="64" />
+        <img className='ava-logo' slot="media" src="assets/vivnpay/svg/logo/ava-logo-viet-duc.svg" width="24" />
         <Link href="/bac-si-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link>
         <Row slot='root' className='item-bottom'>
           <Col>
-            <div className='font-size-12'>Phí dịch vụ</div>
-            <div className='medium color-primary'>560,000đ</div>
+            <div className='font-size-14'>Phí dịch vụ</div>
+            <div className='medium color-primary'>560,000<sub>đ</sub></div>
             </Col>
             <Col>
             <Button href="/dat-lich-kham/" fill color="default">Đặt lịch khám</Button>
@@ -51,13 +51,13 @@ const ChuyenKhoaDetail = () => (
           </Row>
       </ListItem>
       <ListItem title="Bs. Lê Công Tuấn Anh" subtitle="Cơ xương khớp" text="Bệnh viện Hữu Nghị Việt Đức">
-        <img className='ava img-64' slot="media" src="demo/ava5.jpg" width="64" />
-        <img className='ava-logo' slot="media" src="svg/logo/ava-logo-viet-duc.svg" width="24" />
+        <img className='ava img-64' slot="media" src="assets/vivnpay/demo/ava5.jpg" width="64" />
+        <img className='ava-logo' slot="media" src="assets/vivnpay/svg/logo/ava-logo-viet-duc.svg" width="24" />
         <Link href="/bac-si-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link>
         <Row slot='root' className='item-bottom'>
           <Col>
-            <div className='font-size-12'>Phí dịch vụ</div>
-            <div className='medium color-primary'>560,000đ</div>
+            <div className='font-size-14'>Phí dịch vụ</div>
+            <div className='medium color-primary'>560,000<sub>đ</sub></div>
             </Col>
             <Col>
             <Button href="/dat-lich-kham/" fill color="default">Đặt lịch khám</Button>
@@ -65,13 +65,13 @@ const ChuyenKhoaDetail = () => (
           </Row>
       </ListItem>
       <ListItem title="Bs. Lê Công Tuấn Anh" subtitle="Cơ xương khớp" text="Bệnh viện Hữu Nghị Việt Đức">
-        <img className='ava img-64' slot="media" src="demo/ava6.jpg" width="64" />
-        <img className='ava-logo' slot="media" src="svg/logo/ava-logo-viet-duc.svg" width="24" />
+        <img className='ava img-64' slot="media" src="assets/vivnpay/demo/ava6.jpg" width="64" />
+        <img className='ava-logo' slot="media" src="assets/vivnpay/svg/logo/ava-logo-viet-duc.svg" width="24" />
         <Link href="/bac-si-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link>
         <Row slot='root' className='item-bottom'>
           <Col>
-            <div className='font-size-12'>Phí dịch vụ</div>
-            <div className='medium color-primary'>560,000đ</div>
+            <div className='font-size-14'>Phí dịch vụ</div>
+            <div className='medium color-primary'>560,000<sub>đ</sub></div>
             </Col>
             <Col>
             <Button href="/dat-lich-kham/" fill color="default">Đặt lịch khám</Button>
@@ -79,13 +79,13 @@ const ChuyenKhoaDetail = () => (
           </Row>
       </ListItem>
       <ListItem title="Bs. Lê Công Tuấn Anh" subtitle="Cơ xương khớp" text="Bệnh viện Hữu Nghị Việt Đức">
-        <img className='ava img-64' slot="media" src="demo/ava7.jpg" width="64" />
-        <img className='ava-logo' slot="media" src="svg/logo/ava-logo-viet-duc.svg" width="24" />
+        <img className='ava img-64' slot="media" src="assets/vivnpay/demo/ava7.jpg" width="64" />
+        <img className='ava-logo' slot="media" src="assets/vivnpay/svg/logo/ava-logo-viet-duc.svg" width="24" />
         <Link href="/bac-si-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link>
         <Row slot='root' className='item-bottom'>
           <Col>
-            <div className='font-size-12'>Phí dịch vụ</div>
-            <div className='medium color-primary'>560,000đ</div>
+            <div className='font-size-14'>Phí dịch vụ</div>
+            <div className='medium color-primary'>560,000<sub>đ</sub></div>
             </Col>
             <Col>
             <Button href="/dat-lich-kham/" fill color="default">Đặt lịch khám</Button>
@@ -93,13 +93,13 @@ const ChuyenKhoaDetail = () => (
           </Row>
       </ListItem>
       <ListItem title="Bs. Lê Công Tuấn Anh" subtitle="Cơ xương khớp" text="Bệnh viện Hữu Nghị Việt Đức">
-        <img className='ava img-64' slot="media" src="demo/ava4.jpg" width="64" />
-        <img className='ava-logo' slot="media" src="svg/logo/ava-logo-viet-duc.svg" width="24" />
+        <img className='ava img-64' slot="media" src="assets/vivnpay/demo/ava4.jpg" width="64" />
+        <img className='ava-logo' slot="media" src="assets/vivnpay/svg/logo/ava-logo-viet-duc.svg" width="24" />
         <Link href="/bac-si-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link>
         <Row slot='root' className='item-bottom'>
           <Col>
-            <div className='font-size-12'>Phí dịch vụ</div>
-            <div className='medium color-primary'>560,000đ</div>
+            <div className='font-size-14'>Phí dịch vụ</div>
+            <div className='medium color-primary'>560,000<sub>đ</sub></div>
             </Col>
             <Col>
             <Button href="/dat-lich-kham/" fill color="default">Đặt lịch khám</Button>

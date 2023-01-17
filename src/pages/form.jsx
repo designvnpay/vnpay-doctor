@@ -13,14 +13,16 @@ import {
   BlockTitle,
   Row,
   Col,
+  Accordion,
   Button,
   Range,
+  Chip,
   Block
 } from 'framework7-react';
 
 const FormPage = () => (
-  <Page name="form">
-    <Navbar title="Form" backLink="Back">
+  <Page name="FormPage">
+    <Navbar title="Form" backLink="Back" className='formpage'>
 
     <NavRight>
         <Link iconOnly>
@@ -101,7 +103,75 @@ const FormPage = () => (
           </List>          
           
           </Col>
-      </Row>   
+      </Row>  
+      <BlockTitle>Alert</BlockTitle>
+      <Block>
+      <div className="toast toast-success modal-in">
+  <div className="toast-content align-items-start">
+    <div className="toast-text toast-custom"><Icon icon="icon24 icons-ic24px-status-success"></Icon>
+    <BlockTitle className='font-size-14 no-margin'>Success</BlockTitle>
+    <p className='mt5'>Detailed description and advice about successful copywriting.</p>
+    </div>    
+    <Button className='toast-button toast-close'><Icon icon="icon24 icons-ic24px-add"></Icon></Button>
+  </div>
+</div>
+      </Block>
+
+      <Block>
+      <div className="toast toast-warning modal-in">
+  <div className="toast-content align-items-start">
+    <div className="toast-text toast-custom"><Icon icon="icon24 icons-ic24px-status-warning"></Icon>
+    <BlockTitle className='font-size-14 no-margin'>Warning</BlockTitle>
+    <p className='mt5'>Detailed description and advice about successful copywriting.</p>
+    </div>    
+    <Button className='toast-button toast-close'><Icon icon="icon24 icons-ic24px-add"></Icon></Button>
+  </div>
+</div>
+      </Block>
+
+      <Block>
+      <div className="toast toast-error modal-in">
+  <div className="toast-content align-items-start">
+    <div className="toast-text toast-custom"><Icon icon="icon24 icons-ic24px-status-error"></Icon>
+    <BlockTitle className='font-size-14 no-margin'>Error</BlockTitle>
+    <p className='mt5'>Detailed description and advice about successful copywriting.</p>
+    </div>    
+    <Button className='toast-button toast-close'><Icon icon="icon24 icons-ic24px-add"></Icon></Button>
+  </div>
+</div>
+      </Block>
+      <BlockTitle>Float message</BlockTitle>
+      <Block>
+      <div className="toast toast-default modal-in">
+  <div className="toast-content">
+    <div className="toast-text"><Icon icon="icon24 icons-ic24px-status-success"></Icon> Creat item success</div>
+  </div>
+</div>
+      </Block>
+      <Block>
+      <div className="toast toast-default modal-in">
+  <div className="toast-content">
+    <div className="toast-text"><Icon icon="icon24 icons-ic24px-status-info"></Icon> This is normal message</div>
+  </div>
+</div>
+      </Block>
+
+      
+      <BlockTitle>Accordion jquery</BlockTitle> 
+      <Accordion>
+    <div className="accordion-item">
+            <div className="accordion-head">Head 1</div>
+            <div className="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+          <div className="accordion-item">
+            <div className="accordion-head">Head 2</div>
+            <div className="accordion-body hide">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </Accordion>
     
 
     <BlockTitle>Checkbox group</BlockTitle>
@@ -164,6 +234,20 @@ const FormPage = () => (
       <ListItem title="Title" badge="Warning" badgeColor="bg-warning" />
       <ListItem title="Title" badge="Processing" badgeColor="bg-processing" />
     </List>
+    <Col>
+        <Chip text="Error" color="red" />
+        <Chip text="Success" color="green" />
+        <Chip text="Processing" color="blue" />
+        <Chip text="Warning" color="orange" />
+        <Chip text="Default" color="black" />
+        <Chip text="Pink" color="pink" />
+        <Chip outline text="Error" color="red" />
+        <Chip outline text="Success" color="green" />
+        <Chip outline text="Processing" color="blue" />
+        <Chip outline text="Warning" color="orange" />
+        <Chip outline text="Default" color="black" />
+        <Chip outline text="Pink" color="pink" />
+        </Col>
     
     <BlockTitle>With Media Lists</BlockTitle>
       <List mediaList>

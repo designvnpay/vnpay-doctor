@@ -1,78 +1,89 @@
 import React from 'react';
 import {
-  Page,Navbar,NavRight,Link,Icon,Badge,Block,BlockTitle,Row,Col,
-  Card,
-  CardHeader,
-  CardContent,
-  CardFooter
+    Page,Navbar,Link,Icon,Block,Row,Col,Button,
+    Searchbar, List,
+    ListItem,NavRight,
+    theme,
 } from 'framework7-react';
 
 const GoiKham = () => (
-<Page name="GoiKham" className='goikham'>
-<Navbar title="GoiKham" backLink="Back">
-
-<NavRight>
-    <Link iconOnly>
-    <Link href="/home-search/"><Icon icon="icon24 icons-ic24px-search"></Icon></Link>
+            <Page name="GoiKham" className='goi-kham page-search bg-white'>
+              <Navbar className='show-border' title="Gói khám" backLink="Back">
+              <NavRight>
+    <Link className='location-button' href="/dia-diem-search/"><Icon icon="icon24 icons-ic24px-location-active"></Icon>
+    <span className="text-location">Hà Nội</span>
     </Link>
   </NavRight>
-</Navbar>
-
-    {/* Page content */}
-    <Block>
-      <BlockTitle>
-        <Row>
-        <Col width="70" className='white-space-normal'>Card pic</Col>
-        <Col width="30" className='text-right'><Link className='font-size-14 regula'>Xem tất cả</Link></Col>
-        </Row>
-      </BlockTitle>
-    <Card className="card-pic">
-      <CardHeader className="no-border no-padding">
-      <div className='pic'>
-              <img src="demo/img2.png" width="100%" />
-              </div>
-              <div className='logo-facilities'>
-              <img src="svg/logo/logo-vinmec.svg" width="40" />
-              </div> 
-      </CardHeader>
-      <CardContent className='align-items-start'>
-      <div className='col color-main'>
-                <div>Bệnh viện Đa khoa Quốc tế Vinmec</div>
-                <div className='font-size-12 color-subtitle'>458 Minh Khai, Khu đô thị Times City, Hai Bà Trưng, ...</div>
-                </div>
-      </CardContent>
-    </Card>
-    </Block> 
-    <Block>
-      <BlockTitle>
-        <Row>
-        <Col width="70" className='white-space-normal'>Card pic</Col>
-        <Col width="30" className='text-right'><Link className='font-size-14 regula'>Xem tất cả</Link></Col>
-        </Row>
-      </BlockTitle>
-    <Card className="card-pic">
-      <CardHeader className="no-border no-padding">
-      <div className='pic'>
-              <img src="demo/img2.png" width="100%" />
-              </div>
-              <div className='logo-facilities'>
-              <img src="svg/logo/logo-vinmec.svg" width="40" />
-              </div> 
-      </CardHeader>
-      <CardContent className='align-items-start'>
-      <div className='col color-main'>
-                <div>Bệnh viện Đa khoa Quốc tế Vinmec</div>
-                <div className='font-size-12 color-subtitle'>458 Minh Khai, Khu đô thị Times City, Hai Bà Trưng, ...</div>
-                </div>
-      </CardContent>
-      <CardFooter>
-        <Link className=''><Icon icon="icon24 icons-ic24px-eye"></Icon> <span class="color-main">Xem</span></Link>
-        <Link><Icon icon="icon24 icons-ic24px-delete"></Icon> <span class="color-main">Xóa</span></Link>
-        <Link><Icon icon="icon24 icons-ic24px-share2"></Icon> <span class="color-main">Chi tiết</span></Link>
-      </CardFooter>
-    </Card>
-    </Block>   
-
-</Page>
+    </Navbar>
+    <Block className='box-search'>
+    <Searchbar
+        disableButtonText="Hủy"
+        placeholder="Tìm kiếm gói khám"
+          searchContainer=".search-list"
+          searchIn=".item-bottom"
+          disableButton={!theme.aurora}
+        ></Searchbar>
+        <List className="searchbar-not-found">
+      <ListItem title="Không tìm thấy"></ListItem>
+    </List>
+    <List mediaList className="search-list searchbar-found search-list-style search-list-bor search-list-nopad">
+    <ListItem href="/goi-kham-detail/">
+        <img className='img-100' slot="after-title" src="assets/vivnpay/demo/pic-goi-kham1.jpg" width="100%" height="140" />
+        <Row slot='root' className='item-bottom'>
+        <Col width="70">
+            <div className='medium'>Gói khám sức khỏe tổng quát</div>
+            </Col>
+            <Col width="30">
+            <Button href="/goi-kham-detail/" fill color="default">Chọn</Button>
+            </Col>            
+          </Row>
+      </ListItem>
+      <ListItem href="/goi-kham-detail/">
+        <img className='img-100' slot="after-title" src="assets/vivnpay/demo/pic-goi-kham2.jpg" width="100%" height="140" />
+        <Row slot='root' className='item-bottom'>
+        <Col width="70">
+            <div className='medium'>Gói khám nhi</div>
+            </Col>
+            <Col width="30">
+            <Button href="/goi-kham-detail/" fill color="default">Chọn</Button>
+            </Col>            
+          </Row>
+      </ListItem>
+      <ListItem href="/goi-kham-detail/">
+        <img className='img-100' slot="after-title" src="assets/vivnpay/demo/pic-goi-kham3.jpg" width="100%" height="140" />
+        <Row slot='root' className='item-bottom'>
+        <Col width="70">
+            <div className='medium'>Gói khám xương khớp</div>
+            </Col>
+            <Col width="30">
+            <Button href="/goi-kham-detail/" fill color="default">Chọn</Button>
+            </Col>            
+          </Row>
+      </ListItem>
+      <ListItem href="/goi-kham-detail/">
+        <img className='img-100' slot="after-title" src="assets/vivnpay/demo/pic-goi-kham4.jpg" width="100%" height="140" />
+        <Row slot='root' className='item-bottom'>
+        <Col width="70">
+            <div className='medium'>Gói khám sức khỏe hậu Covid</div>
+            </Col>
+            <Col width="30">
+            <Button href="/goi-kham-detail/" fill color="default">Chọn</Button>
+            </Col>            
+          </Row>
+      </ListItem>
+      <ListItem href="/goi-kham-detail/">
+        <img className='img-100' slot="after-title" src="assets/vivnpay/demo/pic-goi-kham5.jpg" width="100%" height="140" />
+        <Row slot='root' className='item-bottom'>
+        <Col width="70">
+            <div className='medium'>Khám tim mạch</div>
+            </Col>
+            <Col width="30">
+            <Button href="/goi-kham-detail/" fill color="default">Chọn</Button>
+            </Col>            
+          </Row>
+      </ListItem>
+    </List>
+    </Block>
+  </Page>
 );
 export default GoiKham;

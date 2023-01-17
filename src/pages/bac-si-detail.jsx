@@ -2,12 +2,8 @@ import React from 'react';
 import {
     Page,
     Navbar,NavRight,Link,Icon,NavTitle,
-    Subnavbar,
-    Segmented,
     Button,Toolbar,
-    Tabs,
-    Tab,
-    Block,Row,Col,
+    Block,Col,
     Card,
   CardHeader,
   CardContent,
@@ -27,21 +23,21 @@ const BacSiDetail = () => (
     </Navbar>
     <Toolbar bottom className='button-bottom'>
           <Col>
-            <div className='font-size-12'>Phí dịch vụ</div>
-            <div className='medium color-primary'>560,000đ</div>
+            <div className='font-size-14'>Phí dịch vụ</div>
+            <div className='medium color-primary'>560,000<sub>đ</sub></div>
             </Col>
             <Col>
-            <Button className="min-width-100" fill color="primary-light">Đặt lịch khám</Button>
+            <Button href="/dat-lich-kham/" className="min-width-100" fill color="primary-light">Đặt lịch khám</Button>
             </Col>            
   </Toolbar>   
     <Block className='block-none'>
       <Card className="card-pic border-radius-0">
       <CardHeader className="no-border no-padding">
       <div className='pic'>
-              <img src="demo/img2.png" width="100%" />
+              <img src="assets/vivnpay/demo/img2.png" width="100%" />
               </div>
               <div className='logo-facilities center-64'>
-              <img src="demo/ava3.jpg" width="64" />
+              <img src="assets/vivnpay/demo/ava3.jpg" width="64" />
               </div> 
       </CardHeader>
       <CardContent className='align-items-start text-center'>
@@ -56,7 +52,7 @@ const BacSiDetail = () => (
       <Block className='block-none box-white'>
       <Card className="card-pic box-shadow-0">
       <CardHeader className="no-border align-items-center">
-        <div class="medium title">Thông tin chung</div>   
+        <div className="medium title">Thông tin chung</div>   
       </CardHeader>
       <CardContent className='p3 list-mb-16'>
       <div>
@@ -77,7 +73,7 @@ const BacSiDetail = () => (
       <Block className='block-none box-white'>
       <Card className="card-pic box-shadow-0">
       <CardHeader className="no-border align-items-center">
-        <div class="medium title">Quá trình đào tạo</div>   
+        <div className="medium title">Quá trình đào tạo</div>   
       </CardHeader>
       <CardContent className='p3 list-mb-16'>
       <div>

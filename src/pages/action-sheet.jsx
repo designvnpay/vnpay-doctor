@@ -121,7 +121,7 @@ export default () => {
           <ActionsButton>
             <img
               slot="media"
-              src="svg/ava-default.svg"
+              src="assets/vivnpay/svg/ava-default.svg"
               width="48"
             />
             <span>Button 1</span>
@@ -129,7 +129,7 @@ export default () => {
           <ActionsButton>
             <img
               slot="media"
-              src="svg/ava-default.svg"
+              src="assets/vivnpay/svg/ava-default.svg"
               width="48"
             />
             <span>Button 2</span>
@@ -137,7 +137,7 @@ export default () => {
           <ActionsButton>
             <img
               slot="media"
-              src="svg/ava-default.svg"
+              src="assets/vivnpay/svg/ava-default.svg"
               width="48"
             />
             <span>Button 3</span>
@@ -147,7 +147,7 @@ export default () => {
           <ActionsButton>
             <img
               slot="media"
-              src="svg/ava-default.svg"
+              src="assets/vivnpay/svg/ava-default.svg"
               width="48"
             />
             <span>Button 4</span>
@@ -155,7 +155,7 @@ export default () => {
           <ActionsButton>
             <img
               slot="media"
-              src="svg/ava-default.svg"
+              src="assets/vivnpay/svg/ava-default.svg"
               width="48"
             />
             <span>Button 5</span>
@@ -163,7 +163,7 @@ export default () => {
           <ActionsButton>
             <img
               slot="media"
-              src="svg/ava-default.svg"
+              src="assets/vivnpay/svg/ava-default.svg"
               width="48"
             />
             <span>Button 6</span>

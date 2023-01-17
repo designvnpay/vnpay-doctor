@@ -1,7 +1,7 @@
 {
-  "name": "VNPAY Doctor",
-  "short_name": "VNPAY Doctor",
-  "description": "VNPAY Doctor",
+  "name": "Dịch vụ y tế",
+  "short_name": "Dịch vụ y tế",
+  "description": "Dịch vụ y tế",
   "lang": "en-US",
   "start_url": "/",
   "display": "standalone",

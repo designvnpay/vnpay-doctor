@@ -13,9 +13,9 @@ import Framework7React from 'framework7-react';
 import '../css/framework7-custom.less';
 
 // Import Icons and App Custom Styles
-import '../css/icons.css';
+import '../assets/css/icons.css';
 import '../css/app.less';
-import '../css/themes.less';
+import '../assets/vivnpay/css/themes.less';
 
 // Import App Component
 import App from '../components/app.jsx';

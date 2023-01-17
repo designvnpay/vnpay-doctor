@@ -31,10 +31,10 @@ const CardPage = () => (
     <Card className="card-pic">
       <CardHeader className="no-border no-padding">
       <div className='pic'>
-              <img src="demo/img2.png" width="100%" />
+              <img src="assets/vivnpay/demo/img2.png" width="100%" />
               </div>
               <div className='logo-facilities'>
-              <img src="svg/logo/logo-vinmec.svg" width="40" />
+              <img src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="40" />
               </div> 
       </CardHeader>
       <CardContent className='align-items-start'>
@@ -55,10 +55,10 @@ const CardPage = () => (
     <Card className="card-pic">
       <CardHeader className="no-border no-padding">
       <div className='pic'>
-              <img src="demo/img2.png" width="100%" />
+              <img src="assets/vivnpay/demo/img2.png" width="100%" />
               </div>
               <div className='logo-facilities'>
-              <img src="svg/logo/logo-vinmec.svg" width="40" />
+              <img src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="40" />
               </div> 
       </CardHeader>
       <CardContent className='align-items-start'>
@@ -68,9 +68,9 @@ const CardPage = () => (
                 </div>
       </CardContent>
       <CardFooter>
-        <Link className=''><Icon icon="icon24 icons-ic24px-eye"></Icon> <span class="color-main">Xem</span></Link>
-        <Link><Icon icon="icon24 icons-ic24px-delete"></Icon> <span class="color-main">Xóa</span></Link>
-        <Link><Icon icon="icon24 icons-ic24px-share2"></Icon> <span class="color-main">Chi tiết</span></Link>
+        <Link className=''><Icon icon="icon20 icons-ic24px-eye"></Icon> <span className="color-main font-size-14">Xem</span></Link>
+        <Link><Icon icon="icon20 icons-ic24px-delete"></Icon> <span className="color-main font-size-14">Xóa</span></Link>
+        <Link><Icon icon="icon20 icons-ic24px-share2"></Icon> <span className="color-main font-size-14">Chi tiết</span></Link>
       </CardFooter>
     </Card>
     </Block>   

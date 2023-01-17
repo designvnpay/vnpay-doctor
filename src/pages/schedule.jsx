@@ -1,49 +1,157 @@
 import React from 'react';
 import {
-  Page,
-  Navbar,
-  NavLeft,
-  NavTitle,
-  NavTitleLarge,
-  NavRight,
-  Link,
-  Toolbar,
-  Block,
-  BlockTitle,
-  List,
-  ListItem,
-  Row,
-  Col,
-  Button
-} from 'framework7-react';
+    Page,
+    Navbar,Link,Icon,
+    Subnavbar,
+    Segmented,
+    Button,Toolbar,
+    Tabs,
+    Tab,
+    Block,Row,Col,
+    List,
+    ListItem,
+    Card,
+  CardHeader,
+  CardContent,
+  } from 'framework7-react';
 
 const SchedulePage = () => (
-  <Page name="SchedulePage" className='schedulepage'>
-    {/* Top Navbar */}
-    <Navbar large sliding={false}>
-      <NavLeft>
-        <Link iconIos="f7:menu" iconAurora="f7:menu" iconMd="material:menu" panelOpen="left" />
-      </NavLeft>
-      <NavTitle sliding>SchedulePage</NavTitle>
-      <NavTitleLarge>SchedulePage</NavTitleLarge>
-    </Navbar>
+            <Page hideToolbarOnScroll pageContent={false} name="SchedulePage" className='schedule-page'>
+    <Navbar title="Lịch khám" backLink="Back">
+      <Subnavbar>
+        <Segmented raised>
+          <Button tabLink="#schedule-tab1" tabLinkActive>
+          Sắp khám
+          </Button>
+          <Button tabLink="#schedule-tab2">Tất cả</Button>
+        </Segmented>
+      </Subnavbar>
+    </Navbar>    
     <Toolbar tabbar labels bottom>
     <Link className='icons-tab icons-tab1' tabLink="#view-home" iconIos="icons-tab1" text="Trang chủ" />
     <Link className='icons-tab icons-tab2' tabLink="#view-schedule" tabLinkActive iconIos="icons-tab2" text="Lịch khám" />
     <Link className='icons-tab icons-tab3' tabLink="#view-favourite" iconIos="icons-tab3" text="Yêu thích" />
-    <Link className='icons-tab icons-tab4' tabLink="#view-phonebook" iconIos="icons-tab4" text="Danh bạ" />
+    <Link className='icons-tab icons-tab4' tabLink="#view-phonebook" iconIos="icons-tab4" text="Thông tin" />
   </Toolbar>
-
-    {/* Page content */}
-    <BlockTitle>Danh mục</BlockTitle>
-    <List>
-    <ListItem link="/typo/" title="Typo"/>
-    <ListItem link="/icons/" title="Icons"/>
-    <ListItem link="/form/" title="Form"/>
-    <ListItem link="/button/" title="Button"/>
-      <ListItem link="/accordion/" title="Accordion"/>
-      <ListItem link="/action-sheet/" title="Action Sheet"/>
-    </List> 
+    <Tabs>
+      <Tab id="schedule-tab1" tabActive className="page-content tab-toolbar">
+      <Block className='box-search'>
+    <List mediaList className="search-list searchbar-found search-list-style search-list-bor bg-item-content-gray">
+    <ListItem className='active' link="/schedule-detail/" title="Bs. Lê Công Tuấn Anh" subtitle="Cơ xương khớp" text="Bệnh viện Hữu Nghị Việt Đức">
+        <img className='ava img-64' slot="media" src="assets/vivnpay/demo/ava3.jpg" width="64" />
+        <img className='ava-logo' slot="media" src="assets/vivnpay/svg/logo/ava-logo-viet-duc.svg" width="24" />
+        <Link href="/schedule-detail/" slot='root-start' className='item-top'>
+        <Row className='item-bottom item-bottom-nobor'>
+          <Col width="60">
+            <div className='font-size-12 color-subtitle'>Bệnh nhân</div>
+            <div className='medium'>Nguyễn Văn A</div>
+            </Col>
+            <Col width="40" className='text-right'>
+            <Icon icon="icon32 icons-ic32px-arrow-right"></Icon>
+            </Col>            
+          </Row>
+          <Row noGap className='item-time'>            
+        <Col className='col-left line-right'>
+        <Button fill color='white-light'><Icon icon="icon24 icons-ic24px-calendar filter-white"></Icon> <span className='button-txt'>12/08/2022</span></Button>
+        </Col>
+        <Col className='col-right'>
+        <Button fill color='white-light'><Icon icon="icon24 icons-ic24px-clock filter-white"></Icon> <span className='button-txt'>10-11 giờ</span></Button>
+        </Col>
+      </Row>
+        </Link>       
+      </ListItem>     
+    </List>
+    </Block>
+      </Tab>
+      <Tab id="schedule-tab2" className="page-content bg-white">
+      <Block className='box-blank text-center' style={{
+          display:'none',
+        }}>
+      <p>
+      <img src="assets/vivnpay/svg/icon/ic-not-found.svg" width="220" />
+      </p>
+      <p>
+      Quý khách chưa có lịch sử khám
+      </p>
+      <p><Button Link="/" fill>Đặt khám ngay</Button></p>
+    </Block>
+      <Block className='box-search'>      
+    <List mediaList className="search-list searchbar-found search-list-style search-list-bor bg-item-content-gray">
+    <ListItem className='active' link="/schedule-detail/" title="Bs. Lê Công Tuấn Anh" subtitle="Cơ xương khớp" text="Bệnh viện Hữu Nghị Việt Đức">
+        <img className='ava img-64' slot="media" src="assets/vivnpay/demo/ava3.jpg" width="64" />
+        <img className='ava-logo' slot="media" src="assets/vivnpay/svg/logo/ava-logo-viet-duc.svg" width="24" />
+        <Link href="/schedule-detail/" slot='root-start' className='item-top'>
+        <Row className='item-bottom item-bottom-nobor'>
+          <Col width="60">
+            <div className='font-size-12 color-subtitle'>Bệnh nhân</div>
+            <div className='medium'>Nguyễn Văn A</div>
+            </Col>
+            <Col width="40" className='text-right'>
+            <Icon icon="icon32 icons-ic32px-arrow-right"></Icon>
+            </Col>            
+          </Row>
+          <Row noGap className='item-time'>            
+        <Col className='col-left line-right'>
+        <Button fill color='white-light'><Icon icon="icon24 icons-ic24px-calendar filter-white"></Icon> <span className='button-txt'>12/08/2022</span></Button>
+        </Col>
+        <Col className='col-right'>
+        <Button fill color='white-light'><Icon icon="icon24 icons-ic24px-clock filter-white"></Icon> <span className='button-txt'>10-11 giờ</span></Button>
+        </Col>
+      </Row>
+        </Link>       
+      </ListItem>
+    <ListItem link="/schedule-detail2/" title="Bs. Lê Công Tuấn Anh" subtitle="Cơ xương khớp" text="Bệnh viện Hữu Nghị Việt Đức">
+        <img className='ava img-64' slot="media" src="assets/vivnpay/demo/ava3.jpg" width="64" />
+        <img className='ava-logo' slot="media" src="assets/vivnpay/svg/logo/ava-logo-viet-duc.svg" width="24" />
+        <Link href="/schedule-detail2/" slot='root-start' className='item-top'>
+        <Row className='item-bottom item-bottom-nobor'>
+          <Col width="60">
+            <div className='font-size-12 color-subtitle'>Bệnh nhân</div>
+            <div className='medium'>Nguyễn Văn A</div>
+            </Col>
+            <Col width="40" className='text-right'>
+            <span className="badge color-success mr6">Đã khám</span>
+            <Icon icon="icon32 icons-ic32px-arrow-right"></Icon>
+            </Col>            
+          </Row>
+        </Link>        
+      </ListItem>
+      <ListItem link="/schedule-detail3/" title="Bs. Lê Công Tuấn Anh" subtitle="Cơ xương khớp" text="Bệnh viện Hữu Nghị Việt Đức">
+        <img className='ava img-64' slot="media" src="assets/vivnpay/demo/ava3.jpg" width="64" />
+        <img className='ava-logo' slot="media" src="assets/vivnpay/svg/logo/ava-logo-viet-duc.svg" width="24" />
+        <Link href="/schedule-detail3/" slot='root-start' className='item-top'>
+        <Row className='item-bottom item-bottom-nobor'>
+          <Col width="60">
+            <div className='font-size-12 color-subtitle'>Bệnh nhân</div>
+            <div className='medium'>Nguyễn Văn A</div>
+            </Col>
+            <Col width="40" className='text-right'>
+            <span className="badge color-danger mr6">Đã hủy</span>
+            <Icon icon="icon32 icons-ic32px-arrow-right"></Icon>
+            </Col>            
+          </Row>
+        </Link>        
+      </ListItem>
+      <ListItem link="/schedule-detail3/" title="Gói khám tổng quát" text="Bệnh viện Hữu Nghị Việt Đức">
+        <img className='ava img-64' slot="media" src="assets/vivnpay/demo/ava8.jpg" width="64" />
+        <img className='ava-logo' slot="media" src="assets/vivnpay/svg/logo/ava-logo-viet-duc.svg" width="24" />
+        <Link href="/schedule-detail2/" slot='root-start' className='item-top'>
+        <Row className='item-bottom item-bottom-nobor'>
+          <Col width="60">
+            <div className='font-size-12 color-subtitle'>Bệnh nhân</div>
+            <div className='medium'>Nguyễn Văn A</div>
+            </Col>
+            <Col width="40" className='text-right'>
+            <span className="badge color-success mr6">Đã khám</span>
+            <Icon icon="icon32 icons-ic32px-arrow-right"></Icon>
+            </Col>            
+          </Row> 
+        </Link>             
+      </ListItem>        
+    </List>
+    </Block>
+      </Tab>
+    </Tabs>
   </Page>
 );
 export default SchedulePage;

@@ -88,7 +88,7 @@ const DatKhamDetail = () => (
           <Col>
           <BlockTitle>Sellect form</BlockTitle>
           <List>
-          <ListItem title="Sellect form" smartSelect smartSelectParams={{pageTitle: 'Select Option', openIn: 'popup',searchbar: true }}>
+          <ListItem title="Sellect form" smartSelect smartSelectParams={{pageTitle: 'Select Option',closeOnSelect:true, openIn: 'popup',searchbar: true }}>
         <select name="form" placeholder='Chọn'>
         <option value=""></option>
         <option value="Option1">Option 1</option>
