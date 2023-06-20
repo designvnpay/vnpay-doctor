@@ -270,14 +270,14 @@ const HomePage = () => (
       <Swiper speed={500} slidesPerView={1.05} spaceBetween={8} className='swiper-2'>
       <SwiperSlide>
       <List mediaList className="search-list searchbar-found search-list-style search-list-bor">
-    <ListItem className='no-margin' title="Bệnh Viện Hữu Nghị Việt Đức" text="458 Minh Khai, Khu đô thị Times City">
+    <ListItem href='/co-so-ye-te-detail/' className='no-margin' title="Bệnh Viện Hữu Nghị Việt Đức" text="458 Minh Khai, Khu đô thị Times City">
         <img className='ava img-64' slot="media" src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="64" />
       </ListItem>
       </List>          
       </SwiperSlide>
       <SwiperSlide>
       <List mediaList className="search-list searchbar-found search-list-style search-list-bor">
-    <ListItem className='no-margin' title="Bệnh Viện Hữu Nghị Việt Đức" text="458 Minh Khai, Khu đô thị Times City">
+    <ListItem href='/co-so-ye-te-detail/' className='no-margin' title="Bệnh Viện Hữu Nghị Việt Đức" text="458 Minh Khai, Khu đô thị Times City">
         <img className='ava img-64' slot="media" src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="64" />
       </ListItem>
       </List>          
