@@ -20,5 +20,20 @@ $('body').on('click', '.accordion-item > .accordion-head', function(e) {
 $('body').on('click', '.close-dialog', function(e) {
   f7.dialog.close();
 });
+$('body').on('click', '.picker-item-selected', function(e) {
+  f7.popover.close();
+});
+
+$('body').on('click', '.read-more', function(e) {
+  $(this).prev().toggle();
+     $(this).siblings('.dots').toggle();
+     if($(this).text()=='Xem thêm'){
+ $(this).text('Thu gọn');
+     }
+     else{
+ $(this).text('Xem thêm');
+     }
+});
+
 
 

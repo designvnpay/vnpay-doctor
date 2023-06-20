@@ -28,26 +28,26 @@ const HomesearchDiaDiem = () => (
       <ListItem title="Không tìm thấy"></ListItem>
     </List>
     <List mediaList className='search-list title-normal searchbar-found search-list-style'>
-      <ListItem href="/home-search/" title="Toàn quốc"></ListItem>
-      <ListItem href="/home-search/" title="Hà Nội"></ListItem>
-      <ListItem href="/home-search/" title="TP. Hồ Chí Minh"></ListItem>
-      <ListItem href="/home-search/" title="Đà Nẵng"></ListItem>
-      <ListItem href="/home-search/" title="Đà Nẵng"></ListItem>
-      <ListItem href="/home-search/" title="An Giang"></ListItem>
-      <ListItem href="/home-search/" title="Bắc Giang"></ListItem>
-      <ListItem href="/home-search/" title="Bắc Kạn"></ListItem>
-      <ListItem href="/home-search/" title="Bạc Liêu"></ListItem>
-      <ListItem href="/home-search/" title="Bà Rịa Vũng Tàu"></ListItem>
-      <ListItem href="/home-search/" title="Buôn Ma Thuột"></ListItem>
-      <ListItem href="/home-search/" title="Bình Định"></ListItem>
-      <ListItem href="/home-search/" title="Đà Nẵng"></ListItem>
-      <ListItem href="/home-search/" title="An Giang"></ListItem>
-      <ListItem href="/home-search/" title="Bắc Giang"></ListItem>
-      <ListItem href="/home-search/" title="Bắc Kạn"></ListItem>
-      <ListItem href="/home-search/" title="Bạc Liêu"></ListItem>
-      <ListItem href="/home-search/" title="Bà Rịa Vũng Tàu"></ListItem>
-      <ListItem href="/home-search/" title="Buôn Ma Thuột"></ListItem>
-      <ListItem href="/home-search/" title="Bình Định"></ListItem>
+      <ListItem title="Toàn quốc" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Hà Nội" value="Toàn quốc" name="radio-location" radio radioIcon="end" defaultChecked></ListItem>
+      <ListItem title="TP. Hồ Chí Minh" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Đà Nẵng" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Đà Nẵng" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="An Giang" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Bắc Giang" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Bắc Kạn" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Bạc Liêu" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Bà Rịa Vũng Tàu" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Buôn Ma Thuột" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Bình Định" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Đà Nẵng" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="An Giang" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Bắc Giang" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Bắc Kạn" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Bạc Liêu" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Bà Rịa Vũng Tàu" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Buôn Ma Thuột" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
+      <ListItem title="Bình Định" value="Toàn quốc" name="radio-location" radio radioIcon="end"></ListItem>
     </List>
 
 </Page>

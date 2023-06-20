@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="24" height="24" transform="translate(596 329)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="icons-ic24px-timeout" transform="translate(-596 -329)" clip-path="url(#clip-path)">
+    <path id="Timeout" d="M12.447,2.043A7.92,7.92,0,1,0,9.565,17.236.72.72,0,0,0,9.521,15.8,6.48,6.48,0,1,1,15.8,9.5a.72.72,0,1,0,1.439.04,7.92,7.92,0,0,0-4.79-7.5ZM14.92,11.8a3.12,3.12,0,1,0,2.206.914A3.12,3.12,0,0,0,14.92,11.8Zm-1.188,1.932a1.679,1.679,0,0,1,1.752-.394l-2.147,2.147a1.68,1.68,0,0,1,.395-1.752Zm.624,2.77L16.5,14.356A1.68,1.68,0,0,1,14.356,16.5ZM10.04,5.32a.72.72,0,1,0-1.44,0v4a.72.72,0,0,0,.211.509l1.6,1.6a.72.72,0,1,0,1.018-1.018L10.04,9.022Z" transform="translate(598.2 332.401)" fill="#262626" fill-rule="evenodd"/>
+  </g>
+</svg>

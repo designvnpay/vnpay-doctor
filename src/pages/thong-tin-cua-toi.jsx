@@ -78,11 +78,11 @@ const ThongTinCuaToi = () => (
     defaultValue="24/07/1999"
     placeholder="Ngày tháng năm sinh"
     className="icon-right icon-date"
-    readonly
-    calendarParams={{openIn: 'customModal',closeOnSelect:true, header: true, title:'Chọn', footer: false, locale:'vi', dateFormat: { month: 'numeric', day: '2-digit', year: 'numeric' }}}
+    calendarParams={{openIn: 'sheet',closeOnSelect:true,header: true, title:'Chọn', footer: false, locale:'vi', dateFormat: { month: 'numeric', day: '2-digit', year: 'numeric'}}}
   >
   <span slot='label' className='clred'> *</span>
   </ListInput>
+
       <ListInput
       label="Số điện thoại"
         type="text"
@@ -101,7 +101,6 @@ const ThongTinCuaToi = () => (
         type="text"
         placeholder="Nhập số sổ BHYT"
         clearButton
-        className="icon-right"
       >        
       </ListInput>
       <ListInput
@@ -110,7 +109,6 @@ const ThongTinCuaToi = () => (
         defaultValue="abc@gmail.com"
         placeholder="Nhập email"
         clearButton
-        className="icon-right"
       >      
       </ListInput>      
     </List>

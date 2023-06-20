@@ -13,7 +13,6 @@ const PhonebookPage = () => (
     <Toolbar tabbar labels bottom>
     <Link className='icons-tab icons-tab1' tabLink="#view-home" iconIos="icons-tab1" text="Trang chủ" />
     <Link className='icons-tab icons-tab2' tabLink="#view-schedule" iconIos="icons-tab2" text="Lịch khám" />
-    <Link className='icons-tab icons-tab3' tabLink="#view-favourite" iconIos="icons-tab3" text="Yêu thích" />
     <Link className='icons-tab icons-tab4' tabLink="#view-phonebook" tabLinkActive iconIos="icons-tab4" text="Thông tin" />
   </Toolbar>
   <Block className='box-blank text-center' style={{

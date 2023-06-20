@@ -104,6 +104,12 @@ const ThongTinDatKham = () => (
       </Sheet>
       <CardContent>
       <List noHairlinesMd className='list-form'>
+      <ListItem
+        checkbox
+        name="my-checkbox"
+        value="Điền sẵn thông tin khách hàng"
+        title="Điền sẵn thông tin khách hàng"
+      ></ListItem>
       <ListInput
         label="Họ và tên"
         type="text"
@@ -160,6 +166,21 @@ const ThongTinDatKham = () => (
         <div className="icons" slot="inner-end">
         <Icon icon="icon24 icons-ic24px-phone"></Icon>        
         </div>        
+      </ListInput>
+      <ListInput
+        label="Số sổ BHYT"
+        type="text"
+        placeholder="Nhập số sổ BHYT"
+        clearButton
+      >        
+      </ListInput>
+      <ListInput
+        label="Email"
+        type="text"
+        defaultValue="abc@gmail.com"
+        placeholder="Nhập email"
+        clearButton
+      >      
       </ListInput>
       <ListItem title="Tỉnh/Thành phố" smartSelect smartSelectParams={{
             pageTitle: 'Tỉnh/Thành phố', openIn: 'popup',searchbar: true, searchbarPlaceholder: 'Chọn Tỉnh/Thành phố',closeOnSelect:true,

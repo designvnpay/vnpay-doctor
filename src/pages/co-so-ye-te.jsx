@@ -27,152 +27,55 @@ const CoSoYte = () => (
           disableButton={!theme.aurora}
         ></Searchbar>
         <List className="searchbar-not-found">
-      <ListItem title="Không tìm thấy"></ListItem>
+      <ListItem>
+      <Block className='box-blank text-center' style={{
+          //display:'none',
+        }}>
+      <p className='mb0'>
+      <img src="assets/vivnpay/svg/icon/ic-not-found.svg" width="220" />
+      </p>
+      <p className='medium font-size-16 mb12 mt0'>
+      Không tìm thấy cơ sở y tế
+      </p>
+    </Block>
+      </ListItem>
     </List>
-    <List mediaList className="search-list search-card searchbar-found search-list-style search-list-bor search-list-nopad">
-    <ListItem href="/co-so-ye-te-detail/">
-    <Card className="card-pic">
-      <CardHeader className="no-border no-padding">
-      <div className='pic'>
-              <img src="assets/vivnpay/demo/img2.png" width="100%" />
-              </div>
-              <div className='logo-facilities'>
-              <img src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="40" />
-              </div> 
-      </CardHeader>
-      <CardContent className='align-items-start '>
-      <div className='col color-main'>
-                <Row>
-        <Col width="85"><div className='medium title'>Bệnh Viện Bạch Mai</div></Col>
-        <Col width="15" className='text-right'><Link href="/co-so-ye-te-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link></Col>
-        </Row>
-                <div className='font-size-12 color-subtitle'>458 Minh Khai, Khu đô thị Times City, Hai Bà Trưng,</div>
-                </div>
-      </CardContent>
-      <CardFooter className="no-border pt0">
-        <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
-      </CardFooter>
-    </Card>
+    <List mediaList className="search-list search-card searchbar-found search-list-style search-list-bor">
+    <ListItem href="/co-so-ye-te-detail/" title="Bệnh Viện Hữu Nghị Việt Đức" text="458 Minh Khai, Khu đô thị Times City">
+    <img className='ava img-48' slot="media" src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="64" />
+    <div className='listitem-footer' slot='root-end'>
+    <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
+    </div>    
     </ListItem>
-    <ListItem href="/co-so-ye-te-detail/">
-    <Card className="card-pic">
-      <CardHeader className="no-border no-padding">
-      <div className='pic'>
-              <img src="assets/vivnpay/demo/bv-back-mai.jpg" width="100%" />
-              </div>
-              <div className='logo-facilities'>
-              <img src="assets/vivnpay/svg/logo/logo-bach-mai.svg" width="40" />
-              </div> 
-      </CardHeader>
-      <CardContent className='align-items-start'>
-      <div className='col color-main'>
-        <Row>
-        <Col width="85"><div className='medium title'>Bệnh Viện Bạch Mai</div></Col>
-        <Col width="15" className='text-right'><Link href="/co-so-ye-te-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link></Col>
-        </Row>
-                <div className='font-size-12 color-subtitle'>458 Minh Khai, Khu đô thị Times City, Hai Bà Trưng,</div>
-                </div>
-      </CardContent>
-      <CardFooter className="no-border pt0">
-        <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
-      </CardFooter>
-    </Card>
+    <ListItem href="/co-so-ye-te-detail/" title="Bệnh Viện Hữu Nghị Việt Đức" text="458 Minh Khai, Khu đô thị Times City">
+    <img className='ava img-48' slot="media" src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="64" />
+    <div className='listitem-footer' slot='root-end'>
+    <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
+    </div>    
     </ListItem>
-    <ListItem href="/co-so-ye-te-detail/">
-    <Card className="card-pic">
-      <CardHeader className="no-border no-padding">
-      <div className='pic'>
-              <img src="assets/vivnpay/demo/bv-phu-san.jpg" width="100%" />
-              </div>
-              <div className='logo-facilities'>
-              <img src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="40" />
-              </div> 
-      </CardHeader>
-      <CardContent className='align-items-start'>
-      <div className='col color-main'>
-                <Row>
-        <Col width="85"><div className='medium title'>Bệnh Viện Bạch Mai</div></Col>
-        <Col width="15" className='text-right'><Link href="/co-so-ye-te-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link></Col>
-        </Row>
-                <div className='font-size-12 color-subtitle'>458 Minh Khai, Khu đô thị Times City, Hai Bà Trưng,</div>
-                </div>
-      </CardContent>
-      <CardFooter className="no-border pt0">
-        <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
-      </CardFooter>
-    </Card>
+    <ListItem href="/co-so-ye-te-detail/" title="Bệnh Viện Hữu Nghị Việt Đức" text="458 Minh Khai, Khu đô thị Times City">
+    <img className='ava img-48' slot="media" src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="64" />
+    <div className='listitem-footer' slot='root-end'>
+    <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
+    </div>    
     </ListItem>
-    <ListItem href="/co-so-ye-te-detail/">
-    <Card className="card-pic">
-      <CardHeader className="no-border no-padding">
-      <div className='pic'>
-              <img src="assets/vivnpay/demo/img2.png" width="100%" />
-              </div>
-              <div className='logo-facilities'>
-              <img src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="40" />
-              </div> 
-      </CardHeader>
-      <CardContent className='align-items-start'>
-      <div className='col color-main'>
-                <Row>
-        <Col width="85"><div className='medium title'>Bệnh Viện Bạch Mai</div></Col>
-        <Col width="15" className='text-right'><Link href="/co-so-ye-te-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link></Col>
-        </Row>
-                <div className='font-size-12 color-subtitle'>458 Minh Khai, Khu đô thị Times City, Hai Bà Trưng,</div>
-                </div>
-      </CardContent>
-      <CardFooter className="no-border pt0">
-        <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
-      </CardFooter>
-    </Card>
+    <ListItem href="/co-so-ye-te-detail/" title="Bệnh Viện Hữu Nghị Việt Đức" text="458 Minh Khai, Khu đô thị Times City">
+    <img className='ava img-48' slot="media" src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="64" />
+    <div className='listitem-footer' slot='root-end'>
+    <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
+    </div>    
     </ListItem>
-    <ListItem href="/co-so-ye-te-detail/">
-    <Card className="card-pic">
-      <CardHeader className="no-border no-padding">
-      <div className='pic'>
-              <img src="assets/vivnpay/demo/bv-back-mai.jpg" width="100%" />
-              </div>
-              <div className='logo-facilities'>
-              <img src="assets/vivnpay/svg/logo/logo-bach-mai.svg" width="40" />
-              </div> 
-      </CardHeader>
-      <CardContent className='align-items-start'>
-      <div className='col color-main'>
-      <Row>
-        <Col width="85"><div className='medium title'>Bệnh Viện Bạch Mai</div></Col>
-        <Col width="15" className='text-right'><Link href="/co-so-ye-te-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link></Col>
-        </Row>
-                <div className='font-size-12 color-subtitle'>458 Minh Khai, Khu đô thị Times City, Hai Bà Trưng,</div>
-                </div>
-      </CardContent>
-      <CardFooter className="no-border pt0">
-        <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
-      </CardFooter>
-    </Card>
+    <ListItem href="/co-so-ye-te-detail/" title="Bệnh Viện Hữu Nghị Việt Đức" text="458 Minh Khai, Khu đô thị Times City">
+    <img className='ava img-48' slot="media" src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="64" />
+    <div className='listitem-footer' slot='root-end'>
+    <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
+    </div>    
     </ListItem>
-    <ListItem href="/co-so-ye-te-detail/">
-    <Card className="card-pic">
-      <CardHeader className="no-border no-padding">
-      <div className='pic'>
-              <img src="assets/vivnpay/demo/bv-phu-san.jpg" width="100%" />
-              </div>
-              <div className='logo-facilities'>
-              <img src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="40" />
-              </div> 
-      </CardHeader>
-      <CardContent className='align-items-start'>
-      <div className='col color-main'>
-                <Row>
-        <Col width="85"><div className='medium title'>Bệnh Viện Bạch Mai</div></Col>
-        <Col width="15" className='text-right'><Link href="/co-so-ye-te-detail/" slot='after'><Icon icon="icon24 icons-ic24px-info"></Icon></Link></Col>
-        </Row>
-                <div className='font-size-12 color-subtitle'>458 Minh Khai, Khu đô thị Times City, Hai Bà Trưng,</div>
-                </div>
-      </CardContent>
-      <CardFooter className="no-border pt0">
-        <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
-      </CardFooter>
-    </Card>
+    <ListItem href="/co-so-ye-te-detail/" title="Bệnh Viện Hữu Nghị Việt Đức" text="458 Minh Khai, Khu đô thị Times City">
+    <img className='ava img-48' slot="media" src="assets/vivnpay/svg/logo/logo-vinmec.svg" width="64" />
+    <div className='listitem-footer' slot='root-end'>
+    <Button href="/chuyen-khoa/" className="width-100" fill color="default">Đặt khám</Button>
+    </div>    
     </ListItem>
     </List>
     </Block>

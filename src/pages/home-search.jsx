@@ -10,25 +10,24 @@ import {
 
 const HomeSearch = () => (
 <Page name="HomeSearch" className='searchbar-location bg-white'>
-<Navbar backLink="Back" className='no-border'>
-    <Navbar>
-    <Subnavbar className='top0 subnavbar-small hiddren-icon' inner={false}>
-        <Searchbar
+<Navbar className='no-border' backLink="Back">
+  <div className='title'>
+  <Searchbar
         disableButtonText="Hủy"
         placeholder="Tìm kiếm"
           searchContainer=".search-list"
           searchIn=".item-title"
           disableButton={!theme.aurora}
         >          
-        </Searchbar>       
-      </Subnavbar>
-    </Navbar>        
-    <NavRight>
+        </Searchbar> 
+  </div>             
+
+<NavRight>
     <Link className='location-button' href="/home-search-dia-diem/"><Icon icon="icon24 icons-ic24px-location-active"></Icon>
     <span className="text-location">Hà Nội</span>
     </Link>
   </NavRight>
-  </Navbar>
+    </Navbar>
     <List className="searchbar-not-found">
       <ListItem title="Không tìm thấy"></ListItem>
     </List>

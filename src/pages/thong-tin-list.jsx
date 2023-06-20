@@ -49,7 +49,7 @@ const ThongTinList = () => (
     </Block>
     <Block className='box-search'>
     <List mediaList className="search-list search-list-active searchbar-found search-list-style search-list-bor">
-    <ListItem title="Phạm Anh Khoa" className='badge-small active'>
+    <ListItem title="Phạm Anh Khoa" badge="Tôi" badgeColor="primary" className='badge-small active'>
         <img className='ava img-48' slot="media" src="assets/vivnpay/svg/icon/ava-default.svg" width="48" />
         <div slot='default' className="item-subtitle"><span className='subtitle-left'>24/07/1983</span> <span className='subtitle-right'>0948807484</span></div>
         <Row slot='root' className='item-bottom item-bottom-button row-border-left'>

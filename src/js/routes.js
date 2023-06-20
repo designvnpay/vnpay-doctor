@@ -3,6 +3,17 @@ import SchedulePage from '../pages/schedule.jsx';
 import SchedulePageDetail from '../pages/schedule-detail.jsx';
 import SchedulePageDetail2 from '../pages/schedule-detail2.jsx';
 import SchedulePageDetail3 from '../pages/schedule-detail3.jsx';
+import SchedulePageDetailChoKham1 from '../pages/schedule-detail-cho-kham1.jsx';
+import SchedulePageDetailChoKham2 from '../pages/schedule-detail-cho-kham2.jsx';
+import SchedulePageDetailChoKham3 from '../pages/schedule-detail-cho-kham3.jsx';
+import SchedulePageDetailChoKham4 from '../pages/schedule-detail-cho-kham4.jsx';
+import SchedulePageDetailChoKham5 from '../pages/schedule-detail-cho-kham5.jsx';
+import SchedulePageDetailDahuy1 from '../pages/schedule-detail-da-huy1.jsx';
+import SchedulePageDetailDahuy2 from '../pages/schedule-detail-da-huy2.jsx';
+import SchedulePageDetailDahuy3 from '../pages/schedule-detail-da-huy3.jsx';
+import SchedulePageDetailDahuy4 from '../pages/schedule-detail-da-huy4.jsx';
+import SchedulePageDetailDaKham from '../pages/schedule-detail-da-kham.jsx';
+import SchedulePageDetailDaKham1Buoi from '../pages/schedule-detail-da-kham-1buoi.jsx';
 import FavouritePage from '../pages/favourite.jsx';
 import PhonebookPage from '../pages/phonebook.jsx';
 import FormPage from '../pages/form.jsx';
@@ -57,11 +68,51 @@ import HelpDetail6 from '../pages/tro-giup-detail6';
 import HelpDetail7 from '../pages/tro-giup-detail7';
 import KetQuaKham from '../pages/ket-qua-kham';
 import HomesearchDiaDiem from '../pages/home-search-dia-diem';
+import scheduleDetail from '../pages/schedule-detail.jsx';
+import SchedulePageDetailChoKhamDaDatLich from '../pages/schedule-detail-cho-kham-da-dat-lich.jsx';
+import SchedulePageDetailChoKhamDaQuaHan from '../pages/schedule-detail-cho-kham-da-qua-han.jsx';
+import SchedulePageDetailChoKhamDangXuLy from '../pages/schedule-detail-cho-kham-dang-xu-ly.jsx';
+import DoiLichKham from '../pages/doi-lich-kham.jsx';
+import DatLichKham2 from '../pages/dat-lich-kham2.jsx';
+import SchedulePageDetailDaHuy1buoi from '../pages/schedule-detail-da-huy-1buoi.jsx';
+import Popup from '../pages/popup.jsx';
 
 var routes = [
   {
     path: '/',
     component: HomePage,
+  },
+  {
+    path: '/popup/',
+    component: Popup,
+  },
+  {
+    path: '/schedule-detail-da-huy-1buoi/',
+    component: SchedulePageDetailDaHuy1buoi,
+  },
+  {
+    path: '/dat-lich-kham2/',
+    component: DatLichKham2,
+  },
+  {
+    path: '/doi-lich-kham/',
+    component: DoiLichKham,
+  },
+  {
+    path: '/schedule-detail-cho-kham-dang-xu-ly/',
+    component: SchedulePageDetailChoKhamDangXuLy,
+  },
+  {
+    path: '/schedule-detail-cho-kham-da-qua-han/',
+    component: SchedulePageDetailChoKhamDaQuaHan,
+  },
+  {
+    path: '/schedule-detail-cho-kham-da-dat-lich/',
+    component: SchedulePageDetailChoKhamDaDatLich,
+  },
+  {
+    path: '/schedule-detail-da-kham-1buoi/',
+    component: SchedulePageDetailDaKham1Buoi,
   },
   {
     path: '/ket-qua-kham/',
@@ -183,6 +234,47 @@ var routes = [
   {
     path: '/schedule-detail/',
     component: SchedulePageDetail,
+  },
+  {
+    path: '/schedule-detail-cho-kham1/',
+    component: SchedulePageDetailChoKham1,
+  },
+  {
+    path: '/schedule-detail-cho-kham2/',
+    component: SchedulePageDetailChoKham2,
+  },
+  {
+    path: '/schedule-detail-cho-kham3/',
+    component: SchedulePageDetailChoKham3,
+  },
+  {
+    path: '/schedule-detail-cho-kham4/',
+    component: SchedulePageDetailChoKham4,
+  },
+  {
+    path: '/schedule-detail-cho-kham5/',
+    component: SchedulePageDetailChoKham5,
+  },
+  
+  {
+    path: '/schedule-detail-da-huy1/',
+    component: SchedulePageDetailDahuy1,
+  },
+  {
+    path: '/schedule-detail-da-huy2/',
+    component: SchedulePageDetailDahuy2,
+  },
+  {
+    path: '/schedule-detail-da-huy3/',
+    component: SchedulePageDetailDahuy3,
+  },
+  {
+    path: '/schedule-detail-da-huy4/',
+    component: SchedulePageDetailDahuy4,
+  },
+  {
+    path: '/schedule-detail-da-kham/',
+    component: SchedulePageDetailDaKham,
   },
   {
     path: '/schedule-detail2/',

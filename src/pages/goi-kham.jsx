@@ -24,7 +24,18 @@ const GoiKham = () => (
           disableButton={!theme.aurora}
         ></Searchbar>
         <List className="searchbar-not-found">
-      <ListItem title="Không tìm thấy"></ListItem>
+        <ListItem>
+      <Block className='box-blank text-center' style={{
+          //display:'none',
+        }}>
+      <p className='mb0'>
+      <img src="assets/vivnpay/svg/icon/ic-not-found.svg" width="220" />
+      </p>
+      <p className='medium font-size-16 mb12 mt0'>
+      Không tìm thấy cơ sở y tế
+      </p>
+    </Block>
+      </ListItem>
     </List>
     <List mediaList className="search-list searchbar-found search-list-style search-list-bor search-list-nopad">
     <ListItem href="/goi-kham-detail/">
